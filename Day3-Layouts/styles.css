@@ -1,0 +1,185 @@
+body {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #adcfee;
+}
+
+header {
+  margin: -5px;
+  padding: 0px;
+  background-color: black;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  gap: 15px;
+}
+
+#search-options,
+#language-options {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.search {
+  width: 700px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.search-button {
+  padding: 5px 9px;
+  border-radius: 5px;
+  background-color: yellow;
+  margin: 0px 0px -5px -5px;
+}
+
+.search-icon {
+  width: 10px;
+}
+
+.navbar {
+  background-color: #260346;
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-body {
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff;
+}
+.products {
+  display: flex;
+  gap: 30px;
+}
+
+.products img {
+  width: 200px;
+  height: 200px;
+}
+
+.products p {
+  margin-left: 20px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: -20px;
+  font-size: 20px;
+  align-items: center;
+}
+
+footer {
+  background: rgb(38, 37, 37);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.boxes {
+  background: #e59e05;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px  solid black;
+
+}
+
+.flex-1, .flex-2{
+  display: flex;
+  padding: 15px;
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+}
+
+.flex-first {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-inside img {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+}
+
+.text{
+  padding: 5px;
+  display: flex;
+  flex-wrap: warp;
+}
+
+.flex-inside button {
+  color: white;
+  padding: 3px;
+  background: red;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 2px;
+}
+
+.flex-inside a{
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+
+
+}
+
+
+.main-flex {
+  display: flex;
+  background: lightblue;
+}
+
+.flex-boxes{
+
+  display: flex;
+  background: #000;
+}
+
+.flex1{
+  display: flex;
+  background: #b21111;
+
+}
+
+.felx-in{
+  display: flex;
+}
+
+.flex-in img {
+  width: 150px;
+  height: 150px;
+}
+
+button{
+  color: white;
+  padding: 3px;
+  background: red;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 2px;
+}
