@@ -55,14 +55,15 @@ main {
 .flex-banner1 {
   display: flex;
   background: #b1e7fa;
-  padding: 15px 25px;
+  padding: 10px 30px;
+  margin-top: 10px;
   gap: 20px;
   border-radius: 20px;
   flex-wrap: wrap;
 }
 
 .upistatement {
-  margin-top: -10px;
+  margin-top: -5px;
   border-radius: 5px;
   width: 150px;
 }
@@ -109,19 +110,28 @@ main {
   gap: 10px;
   border: none;
 }
-.heading h3 {
-  margin: -25px;
+.recharge-bills-heading {
+  margin: -18px;
+  font-size: 20px;
 }
 
 .recharge-icons {
   width: 50px;
   height: 50px;
+  margin-bottom: 10px;
 }
 .flex-a {
   display: flex;
+  color: #000;
   margin: 10px 0px 0px 10px;
+  padding: 15px 1px 0px 10px;
   text-decoration: none;
+  border-radius: 5px;
   flex-direction: column;
+}
+
+.flex-a:hover{
+  background: #edecec;
 }
 
 .elements span {
@@ -154,7 +164,7 @@ main {
 .grid-monthly {
   display: grid;
   margin-top: 10px;
-  margin-bottom:10px ;
+  margin-bottom: 10px;
   grid-template-columns: 0.3fr 0.3fr;
   gap: 10px;
 }
@@ -162,8 +172,109 @@ main {
 .text-grid p {
   color: rgb(1, 1, 55);
 }
-.img-monthly{
+.img-monthly {
   width: 100px;
   height: 150px;
   border-radius: 10px;
 }
+
+.flex-2items {
+  display: flex;
+  gap: 20px;
+  margin: 10px 80px 10px 120px;
+  padding: 5px 30px;
+}
+
+.felx-cashback {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background: #00b8f5;
+  gap: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+
+.caskback-img,
+.broadband-img {
+  width: 50px;
+  border-radius: 50px;
+}
+.recharge-now , .paynow-btn{
+  margin-left: 10px;
+  border: 1px solid white;
+  color: white;
+  background: #00b8f5;
+  padding: 7px 15px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: end;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.flex-broadbnadbill {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  background: #012a72;
+  gap: 10px;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.paynow-btn{
+  margin-left: 100px;
+  background: #012a72;
+}
+
+.hide-text{
+  font-size: 14px;
+}
+
+.app-features{
+  display: grid;
+  grid-template-columns:  4fr 4fr 4fr;
+  padding: 10px;
+  gap: 20px;
+  margin: 20px 130px 20px 160px;
+}
+
+.payments-hide{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background: linear-gradient(107deg,#0cd8f6 11%, #4450fb 100%);
+  padding: 10px 15px;
+  gap: 30px;
+  border-radius: 15px;
+}
+
+.hide-heading{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+
+.hide-button{
+  font-size: 13px;
+  background: #f3c84d;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.hide-history-img{
+  width: 130px;
+  border-radius: 20px;
+}
+
+
