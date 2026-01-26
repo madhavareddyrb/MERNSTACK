@@ -11,14 +11,14 @@
   justify-content: center;
 }
 .paytm-logo {
-  width: 150px;
-  height: 70px;
+  width: 130px;
+  height: 40px;
 }
 
 .signin-logo {
   width: 40px;
   height: 40px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-right: -20px;
 }
 
@@ -274,7 +274,169 @@ main {
 
 .hide-history-img{
   width: 130px;
+  height: 130px;
   border-radius: 20px;
 }
 
+.grid-booking{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background: #e8f8fd;
+}
 
+.booking-options-grid{
+  display: grid;
+  grid-template-columns: 7fr 1fr ;
+  padding: 20px 150px 20px 180px;
+} 
+
+.nav-flex-booking {
+    display: flex;
+    gap: 30px;
+  }
+
+.nav-flex-booking p{
+  margin-bottom: 10px;
+}
+
+.nav-flex-booking a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+
+.select-booking-date{
+  display: grid;
+  border-radius: 30px;
+  grid-template-rows:1fr 1fr 1fr ;
+  margin: 0px 150px 0px 180px;
+  padding: 30px;
+  background: #fff;
+
+}
+
+.select-booking-date label{
+  gap: 2px;
+}
+
+.select-destination{
+  display: flex;
+  gap: 50px;
+}
+
+.select-destination select{
+  border: none;
+  font-size: 20px;
+}
+
+.select-booking-date span{
+  margin-bottom: 10px;
+}
+
+.span-div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.search-booking{
+  background: #00baf2;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.special-offer{
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+
+}
+
+.special-flex{
+  display: flex;
+  gap: 20px;
+}
+
+.extra-savings{
+  color: green;
+}
+
+.pay-anyone-layout{
+  background: #f7f9fc;
+  display: flex;
+  padding: 20px 150px 20px 180px;
+  
+
+}
+
+.pay-layout{
+  width: 50%;
+
+  background: #ffffff;
+  padding: 30px 50px;
+}
+
+.paytm-payanyone{
+  width: 200px;
+}
+
+
+.pay-heading{
+  font-size: 40px;
+}
+
+.paragraph-payout{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.store-div {
+  display: flex;
+  padding: 25px;
+  height: 100px;
+}
+.pay-logs{
+  width: 40px;
+}
+
+.store-buttons{
+  background: black;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.app-versions{
+  display:flex;
+  gap: 10px;
+  padding: 0px 10px 0px 10px;
+}
+.pay-anyone{
+  width: 50%;
+  background: #ffffff;
+  
+}
+
+.images-flex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+
+.avatar-images{
+  width: 100px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.payment-done{
+  margin-top: -70px;
+  width: 150px;
+  height: 200px;
+}
