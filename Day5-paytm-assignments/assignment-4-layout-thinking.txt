@@ -1,0 +1,13 @@
+Assignment 4: Layout Thinking – Paytm Sections
+
+1.NavBar: For navbar we can use flex box because everthing in same line,same width,height
+
+2.Second Banner: We can USE flex. Once It Started there is no gap between divs
+
+3.Recharge & Bill Payments: for outer layer we use grid because one box is taking more width other one taking width(grid-template-columns: 4fr 1fr) like that. Inside that for all options we can use flex because all in same repeated images and p tags in down. Remaing is one more grid we can insert image.
+
+4.Two banners, three banners : We can use flex because same layout repeated
+
+5.For Booking Section: We can use flex for nav type for with justify-content: space around, remaing inside one we grid 1fr,1fr,1fr and for inside content we can use flex all same one by one
+
+6.PayAnyone Layout: we can use grid and for images we can flex for up and done for middle we can use grid

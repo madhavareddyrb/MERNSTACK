@@ -1,0 +1,5 @@
+Assignment 5: Interview-Style Question
+
+“If you are building Paytm UI, will you choose Custom CSS, Bootstrap, or Tailwind? Why?”
+
+i prefer Thailwind because Its so great that we can change to any color,any width with fast development when comes to custome css takes more time, we need to create external file,need to repeat code, selecting inside div hard and every class name should be unique so i will choose thailwind, on other hand BootStrap has limited styleing UI, we can't adjust specific width,margin,padding,height,colors etc where in thailwind we can do what ever we want. So my options is thailwind css.

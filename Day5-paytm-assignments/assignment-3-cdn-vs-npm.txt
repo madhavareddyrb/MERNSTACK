@@ -1,0 +1,14 @@
+Assignment 3: CDN vs npm – Thinking Assignment (Paytm Scale)
+
+1.Why Paytm team will NOT depend only on CDN?
+
+CDN is a link,we can't change or modify the code written in CDN and we can't use specific bootstrap version no version control, If CDN server gets issues(server issues) the application is going to break,CDN loads all componunts cause application perfomance issues.CDN is good for practice,demos,learning but not suitable for real applications as of now.
+
+2.Why npm/local system is Prefered?
+
+Through npm we can install specific version packages,when our application is loading we don't need to go another server for bootstrap(like CDN),componunts are locally avaiable and we are going to use only specific componunts what we need, we don't need to load all componunts.
+
+3.What Happens If CDN fails?
+
+The styles are not going to work,application will look very bad and it will  cause perfomance issues
+
