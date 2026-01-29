@@ -183,3 +183,18 @@ button{
   border-radius: 4px;
   margin-right: 2px;
 }
+
+
+@media screen and (min-width:786px){
+  body{
+    background: red;
+  }
+  
+}
+
+@media screen and (max-width:1024px){
+  body{
+    background: #260346;
+  }
+  
+}

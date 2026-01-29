@@ -442,9 +442,16 @@ main {
   height: 200px;
 }
 
-@media screen and (min-width: 764px) {
-  body{
-    background: #f3c84d;
-  }
-  
+.paytm24X7{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#008ffc,#00bff1);
+}
+
+
+.paytm-logo-24 {
+    width: 50px;
+    margin-right: 18px;
+    border-radius: 50px;
+    background: red;
 }
