@@ -5,70 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-  </body>
-    <script>
-      const trade_companies = [
-        {
-          company_name:
-            "ICICI Prudential Regular Gold Savings (FOF) Direct-Growth",
-          trade_in: "-⭐ .Gold & Silver . gold",
-          min_invest: "₹100",
-          total_ammount: "₹4,482 Cr",
-          return_in_years: "+176.82",
-        },
-        {
-          company_name: "Nippon India Large Cap Fund Direct-Growth",
-          trade_in: "-⭐ .Equity . Large Cap",
-          min_invest: "₹100",
-          total_ammount: "₹50,876 Cr",
-          return_in_years: "+72.32%",
-        },
-        {
-          company_name: "ICICI Prudential BHARAT 22 FOF Direct - Growth",
-          trade_in: "-⭐ .Equity . Large Cap",
-          min_invest: "₹1000",
-          total_ammount: "₹2,500 Cr",
-          return_in_years: "+100.32%",
-        },
-        {
-          company_name: "ITI Small Cap Fund Direct - Growth",
-          trade_in: "-⭐ .Equity . Small Cap",
-          min_invest: "₹500",
-          total_ammount: "₹2,793 Cr",
-          return_in_years: "+100.32%",
-        },
-        {
-          company_name: "Bandan Small Cap Fund Direct - Growth",
-          trade_in: "-⭐ .Equity . Small Cap",
-          min_invest: "₹100",
-          total_ammount: "₹18,990 Cr",
-          return_in_years: "+121.67%",
-        },
-        {
-          company_name: "SBI Contra Direct Plan-Growth",
-          trade_in: "-⭐ .Equity . Value Oriented",
-          min_invest: "₹500",
-          total_ammount: "₹49,987 Cr",
-          return_in_years: "+7.68%",
-        },
-        {
-          company_name: "Motilal Oswal Midcap Fund Direct - Growth",
-          trade_in: "-⭐ .Equity . Mid Cap",
-          min_invest: "₹101",
-          total_ammount: "₹36,880 Cr",
-          return_in_years: "+89.34%",
-        },
-      ];
+  <body></body>
+  <script>
+    const trade_companies = [
+      {
+        company_name:
+          "ICICI Prudential Regular Gold Savings (FOF) Direct-Growth",
+        trade_in: "-⭐ .Gold & Silver . gold",
+        min_invest: "₹100",
+        total_ammount: "₹4,482 Cr",
+        return_in_years: "+176.82",
+      },
+      {
+        company_name: "Nippon India Large Cap Fund Direct-Growth",
+        trade_in: "-⭐ .Equity . Large Cap",
+        min_invest: "₹100",
+        total_ammount: "₹50,876 Cr",
+        return_in_years: "+72.32%",
+      },
+      {
+        company_name: "ICICI Prudential BHARAT 22 FOF Direct - Growth",
+        trade_in: "-⭐ .Equity . Large Cap",
+        min_invest: "₹1000",
+        total_ammount: "₹2,500 Cr",
+        return_in_years: "+100.32%",
+      },
+      {
+        company_name: "ITI Small Cap Fund Direct - Growth",
+        trade_in: "-⭐ .Equity . Small Cap",
+        min_invest: "₹500",
+        total_ammount: "₹2,793 Cr",
+        return_in_years: "+100.32%",
+      },
+      {
+        company_name: "Bandan Small Cap Fund Direct - Growth",
+        trade_in: "-⭐ .Equity . Small Cap",
+        min_invest: "₹100",
+        total_ammount: "₹18,990 Cr",
+        return_in_years: "+121.67%",
+      },
+      {
+        company_name: "SBI Contra Direct Plan-Growth",
+        trade_in: "-⭐ .Equity . Value Oriented",
+        min_invest: "₹500",
+        total_ammount: "₹49,987 Cr",
+        return_in_years: "+7.68%",
+      },
+      {
+        company_name: "Motilal Oswal Midcap Fund Direct - Growth",
+        trade_in: "-⭐ .Equity . Mid Cap",
+        min_invest: "₹101",
+        total_ammount: "₹36,880 Cr",
+        return_in_years: "+89.34%",
+      },
+    ];
 
-
-      debugger;
-      for (let index = 6; index <= trade_companies.length; index++) {
-  console.log(index);
-  console.log(trade_companies.length);
-
-  console.log(trade_companies[index]);
-}
-
-    </script>
+    for (let index = 0; index < trade_companies.length; index++) {
+      // console.log(index);
+      // console.log(trade_companies.length);
+      console.table(trade_companies);
+    }
+  </script>
 </html>
