@@ -75,3 +75,4 @@ const deleteTask = function () {
 
 deleteTask();
 console.log(taskManagement);
+
