@@ -17,8 +17,9 @@ const productList = [
 ];
 
 const result = function dataLoop(copyOfproductList) {
-  console.log(copyOfproductList);
-  // return copyOfproductList;
+  // console.log(copyOfproductList); 
+  // console.log(copyOfproductList.name) // undefind
+  return copyOfproductList;
 };
 
 // console.log(result); // Direct function
@@ -31,6 +32,14 @@ const result = function dataLoop(copyOfproductList) {
 
 // productList.forEach(result) // prodcutList items and here forEach itselfs returns nothing, *** Logs from inside the callback
 
-// console.log(productList.forEach(result));  // output undefined  ****Logs the return value of forEach
+// console.log(productList.forEach(result));  // output undefined and array items  ****Logs the return value of forEach
 
-console.log(productList.forEach(result())); // result() -> result is executed right now, Its return value is passed into forEach, But result function is returning nothing, so js see this is forEach(undefinded)
+// console.log(productList.forEach(result())); // result() -> result is executed right now, Its return value is passed into forEach, But result function is returning nothing, so js see this is forEach(undefinded).here result is function but the movement we call it. It returns undefined so we see error becuase js see like this forEach(undefinded)
+
+const finalResult = productList.forEach(result)
+
+console.log(typeof finalResult); // undefined data type
+
+
+
+// productList.map(result)
