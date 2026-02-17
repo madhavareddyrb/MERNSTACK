@@ -1,0 +1,15 @@
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 10px;
+    background: rgb(249, 250, 251);
+    display: flex;
+}
+
+.text-card{
+  background:#fff;
+  padding: 3%;
+  align-items: flex-start;
+  margin-top: -10%;
+  border-radius: 20px;
+}

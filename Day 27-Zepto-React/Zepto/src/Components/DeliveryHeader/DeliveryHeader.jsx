@@ -1,6 +1,10 @@
 import "./DeliveryHeader.css";
 
 function DelivaryHead() {
+const delivery = {
+  time: "6 Minutes",
+  location: "Kondapur,Hyderbad"
+}
   return (
     <>
       <div className="container">
@@ -11,10 +15,11 @@ function DelivaryHead() {
           />
 
           <div>
-            <span className="delivery-time">⌚ 6 minutes</span>
-            <p>Kondapur,Hyderabad</p>
+            <span className="delivery-time">⌚ {delivery.time}</span>
+            <p>{delivery.location}</p>
           </div>
           <button className="change-button">Change</button>
+          
         </div>
 
         <div className="search-bar">
