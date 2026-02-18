@@ -1,0 +1,9 @@
+.navbar button{
+  background: none;
+  border: none;
+
+}
+
+.navbar button:hover{
+  cursor: pointer;
+}
