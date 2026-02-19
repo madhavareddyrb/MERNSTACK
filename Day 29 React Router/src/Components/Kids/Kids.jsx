@@ -1,5 +1,11 @@
+import Home from "../Home/Home"
+
 function Kids(){
-  return "'Kids Collection'"
+  return (<>
+  <Home/>
+  <div>Kids Collection</div>
+  
+  </>)
 }
 
 export default Kids

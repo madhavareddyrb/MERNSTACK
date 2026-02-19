@@ -1,9 +1,18 @@
-.navbar button{
-  background: none;
-  border: none;
-
+.navbar{
+  display: flex;
+  gap: 10px;
+  
+}
+a {
+  text-decoration: none;
 }
 
-.navbar button:hover{
-  cursor: pointer;
+.navbar a.active{
+  background: #f41cb2;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.navbar a.pending{
+  background-color: rgb(157, 156, 156);
 }

@@ -1,0 +1,16 @@
+
+
+/* .products-link a.active{
+  background: #f41cb2;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.products-link a.pending{
+  background-color: rgb(157, 156, 156);
+} */
+
+.products-link{
+  display: flex;
+  gap: 10px;
+}

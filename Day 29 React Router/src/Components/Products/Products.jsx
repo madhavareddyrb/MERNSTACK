@@ -1,17 +1,28 @@
-import { use } from "react";
-import { useParams, useNavigate,BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ProductDetail from "../ProductDetail/ProductDetail";
+import "./Products.css";
+import { Link } from "react-router-dom";
+import { productsData } from "../ProductDetail/ProductDetail";
+ 
 
 function Products() {
 
+  // console.log(productsData, "Products Data");
+  
   return (
     <>
       <h2>From Products </h2>
-      <Link to="/products/product/1">Product 1</Link>
-      <Link to="/products/product/2">Product 2</Link>
-      <Link to="/products/product/3">Product 3</Link>
-      <Link to="/products/product/4">Product 4</Link>
-      <Link to="/products/product/5">Product 5</Link>
+      <div className="products-link">
+
+        {productsData.map(function(data,index){
+          return (
+            <>
+              <Link to={`/products/product/${index}`}>{data.name}</Link>
+            </>
+          );
+        })}
+      </div>
+
+      
     </>
   );
 }
