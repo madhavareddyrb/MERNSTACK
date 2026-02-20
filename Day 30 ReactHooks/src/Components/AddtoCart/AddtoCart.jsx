@@ -14,8 +14,6 @@ function AddtoCart() {
   const [addtoCart, setaddtocart] = useState("Add to Cart");
 
   function setBagCount(e) {
-    console.log(e);
-
     setCount(cartCount + 1);
     setisinBag(true);
   }
