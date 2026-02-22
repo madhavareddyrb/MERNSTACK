@@ -28,7 +28,10 @@ function SearchFilter() {
             //   <div>{product}</div>
             // </div>;
 
-            return <>{/* <div>{product}</div> */}</>;
+            return <>
+            <div>{product}</div>
+            
+            </>;
           } else {
             ("not foud");
           }
