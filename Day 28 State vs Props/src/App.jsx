@@ -1,13 +1,17 @@
 import "./App.css";
 import Child from "./Components/Child.jsx";
+import { useEffect } from "react";
 import ProductCard from "./Components/productCard.jsx";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 import Dashboard from "./Components/Dashboard/Dashboard.jsx";
 import Login from "./Components/Login/login.jsx";
 import { useState } from "react";
+import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute.jsx";
 
 function App() {
-  const [isLoggedin, setisLoggedin] = useState(false);
+
+  const [isLoggedin, setIsLoggedin] = useState(false);
+ 
 
   return (
     <>
@@ -26,12 +30,22 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="" element={<Login />} />
-        <ProtectedRoute>
-
-          <Route path="/dashboard" element={<Dashboard />} />
-        </ProtectedRoute>
-
+          <Route path="" element={<Login setIsLoggedin={setIsLoggedin} />} />
+          {/* Protected routes */}
+          <Route element={<ProtectedRoute />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+            {/* Add other protected routes as nested <Route> here */}
+          </Route>
+          {/* <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute isLoggedin={isLoggedin}>
+                <Dashboard setIsLoggedin={setIsLoggedin} />
+              </ProtectedRoute>
+            }
+          /> */}
+          {/* <ProtectedRoutes loginStatus={isLoggedin}> */}
+          {/* </ProtectedRoutes> */}
         </Routes>
       </BrowserRouter>
     </>

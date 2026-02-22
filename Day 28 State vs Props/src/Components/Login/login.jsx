@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 
-function Login() {
+function Login({ setIsLoggedin }) {
+  
+
   const [userName, setuserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -25,8 +27,10 @@ function Login() {
       setError("client id must start with ZR");
       return;
     }
-    if (userName === "Z101" && password === "1234567") {
-      navigate("dashboard");
+    if (userName === "ZR101" && password === "1234567") {
+      setIsLoggedin(true);
+      navigate("dashboard")
+      
     } else {
       setError("InValid Credentials");
     }
@@ -37,7 +41,7 @@ function Login() {
       <main className="login-main">
         <form className="login-form" action="">
           <h2>Login Here</h2>
-          <label for="username">UserName: </label>
+          <label >UserName: </label>
           <input
             className="input-tags"
             type="text"
@@ -45,7 +49,7 @@ function Login() {
             onChange={(e) => setuserName(e.target.value)}
           />
 
-          <label for="password">Password: </label>
+          <label >Password: </label>
           <input
             className="input-tags"
             type="password"
@@ -57,7 +61,6 @@ function Login() {
           </button>
 
           <p>Error: {error}</p>
-
         </form>
       </main>
     </>
@@ -92,10 +95,7 @@ Assignment 3: Protedcted DashBoard
 1.create a state isLoggedin with false in app.jsx
 2.create a protectedRoute component and write condition if user not loggedin navigate to login
 3.dashboard url inside protecedroute
-4.if is Loggedin true set means we need to use this state in Login.jsx 
+4.if is Loggedin true  means we need to use this state to  true and we need acccess this useState in login.jsx to make it true inside log condition
 5.set a logout button in dashboard and setIsLoggenin(false) and navigate to Login
  
-
-
-
 */
