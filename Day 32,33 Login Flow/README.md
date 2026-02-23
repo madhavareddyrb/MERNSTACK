@@ -17,7 +17,7 @@ steps:
 
 ## Assignments 3
 
-1. cretae a component watchListFilter and useStates 3 with all,Nse, bse
+1. cretae a component watchListFilter and a useState to track filter and stocks data
 
 2.when user select a filter, cretae a session storage then with key , value
 

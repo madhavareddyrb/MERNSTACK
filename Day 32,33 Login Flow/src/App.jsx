@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
+import WatchListFilter from "./Components/WatchListFilter/WatchListFilter";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
+
+      <WatchListFilter />
     </>
   );
 }
