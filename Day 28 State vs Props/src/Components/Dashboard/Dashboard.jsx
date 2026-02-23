@@ -1,7 +1,6 @@
 import { Navigate } from "react-router-dom";
 
 function Dashboard({ setIsLoggedIn }) {
-  const navigate = useNavigate();
 
   const handleLogout = () => {
     setIsLoggedIn(false); // 🔥 remove access

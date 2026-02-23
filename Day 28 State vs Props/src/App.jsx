@@ -10,44 +10,18 @@ import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute.jsx";
 
 function App() {
 
-  const [isLoggedin, setIsLoggedin] = useState(false);
+ 
  
 
   return (
     <>
-      {/* <ProductCard
-        name="Tamota"
-        price={20}
-        details={{ unit: "250g", offer_price: 10 }}
-      /> */}
+      <Routes>
 
-      {/* <Child name="Zoro" anime="One Piece" /> <br /> */}
-      {/* {greeting(name)} */}
+  <Route path="" element={<Login/>}></Route>
+  <Route path="/dashboard" element={<Dashboard/>}></Route>
+      </Routes>
 
-      {/* <div>
-        <ProductCard name="Tomata-Hybrid" price={42} originalPrice={52} unit="500 g" image="tomato.jpg" discount={20} inStock={true} />
-      </div> */}
-
-      <BrowserRouter>
-        <Routes>
-          <Route path="" element={<Login setIsLoggedin={setIsLoggedin} />} />
-          {/* Protected routes */}
-          <Route element={<ProtectedRoute />}>
-            <Route path="/dashboard" element={<Dashboard />} />
-            {/* Add other protected routes as nested <Route> here */}
-          </Route>
-          {/* <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute isLoggedin={isLoggedin}>
-                <Dashboard setIsLoggedin={setIsLoggedin} />
-              </ProtectedRoute>
-            }
-          /> */}
-          {/* <ProtectedRoutes loginStatus={isLoggedin}> */}
-          {/* </ProtectedRoutes> */}
-        </Routes>
-      </BrowserRouter>
+  
     </>
   );
 }
