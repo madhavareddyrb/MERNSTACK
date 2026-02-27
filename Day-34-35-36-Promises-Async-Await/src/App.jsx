@@ -6,11 +6,13 @@ import RestaurantList from "./Components/RestaurantList/RestaurantList";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import HomePage from "./Components/HomePage/HomePage";
 import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
+import PromisesPage from "./Components/PromisesPage/PromisesPage";
+import GetMethod from "./Components/GetMethod/GetMethod";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<RestaurantList />} />
           <Route path="/login" element={<LoginPage />} />
@@ -23,8 +25,10 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <RestaurantList /> */}
+      {/* < PromisesPage/> */}
+      {<GetMethod/>}
     </>
   );
 }
